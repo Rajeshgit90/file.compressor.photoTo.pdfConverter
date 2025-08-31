@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>File Converter & PDF Compressor</title>
+  <link rel="stylesheet" href="filecompressor.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>File Converter & PDF Compressor</h1>
+
+    <div class="section">
+      <h2>Image to PDF</h2>
+      <input type="file" id="imageInput" accept="image/*" />
+      <button onclick="convertImageToPDF()">Convert to PDF</button>
+    </div>
+
+    <div class="section">
+      <h2>Compress PDF</h2>
+      <input type="file" id="pdfInput" accept="application/pdf" />
+      <button onclick="compressPDF()">Compress PDF</button>
+    </div>
+
+    <div id="status"></div>
+  </div>
+
+  <script src="filecompressor.js"></script>
+</body>
+</html>
